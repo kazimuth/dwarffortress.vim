@@ -1,0 +1,56 @@
+*dwarffortress.txt*                             Plugin for dwarf fortress raws
+*dwarffortress* *ft-dwarffortress* *dwarffortress.vim*
+           ______   _______            _________ ___ ___ ~
+          (  __  \ (  ____ \  |\     /|\__   __/(   U   )~
+          | (  \  )| (    \/  | )   ( |   ) (   | () () |~
+          | |   ) || (__      | |   | |   | |   | || || |~
+          | |   | ||  __)     ( (   ) )   | |   | |\_/| |~
+          | |   ) || (         \ \_/ /    | |   | |   | |~
+          | (__/  )| )      _   \   /  ___) (___| )   ( ■~
+          (______/ |/      (_)   \_/   \_______/|/     \■■ .■ (-☻ .~
+                                             ~
+==============================================================================
+CONTENTS                                              *dwarffortress-contents*
+
+1. Introduction                                          |dwarffortress-intro|
+2. Settings                                           |dwarffortress-settings|
+3. Changelog                                         |dwarffortress-changelog|
+
+==============================================================================
+INTRODUCTION                                               *dwarffortress-intro*
+
+  dwarffortress.vim is a plugin designed to help edit Dwarf Fortress raw
+  files. It provides syntax highlighting and snippets to make modding Dwarf
+  Fortress easier.
+
+  To learn more about Dwarf Fortress, go to:
+    http://www.bay12games.com/dwarves/
+
+==============================================================================
+SETTINGS                                          *dwarffortress-configuration*
+
+  There are a few knobs you can turn. Defaults are shown.
+
+                                                         *g:dwarffortress-guess*
+  `let g:dwarffortress_guess=1`
+
+  Whether or not to inspect the contents of .txt files to determine if they
+  are raw files.
+  
+  To be specific, the plugin checks if the first line of the
+  file matches its filename, and whether it contains the string "`[OBJECT:`".
+  This could cause slowdowns if you're looking at, say, large log files.
+
+
+                                                        *g:dwarffortress-always*
+  `let g:dwarffortress_always=0`
+
+  Whether to assume ALL .txt files are dwarf fortress raws.
+  Note: This is probably a bad idea.
+  
+
+
+
+this one goes out to those poor souls pathologically addicted to terrible interfaces
+
+ vim:tw=78:sw=4:noet:ts=8:ft=help:norl:
